@@ -1,6 +1,3 @@
-#Livro de receitas 
+Trabalho 1 - Fazer uma calculadora com as principais funções aritimeticas. API+Flask+Python.
 
-Ola! Bem, vindo ao meu livro de receitas
-
-* Pavê
-
+Trabalho 2 - Fazer webscraping em qualquer site de receitas e trazer os ingredientes. 
