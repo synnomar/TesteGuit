@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora Flask</title>
+</head>
+
+<style>
+body {
+  background-image: url('https://img.freepik.com/fotos-premium/vista-superior-de-um-mouse-para-jogos_160097-806.jpg?w=800');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+<body>
+
+<center>
+    <h1>Calculadora Flask</h1>
+    <form method="POST" action="/calculate">
+        <input type="text" name="num1">
+        <select name="operator">
+            <option value="add">+</option>
+            <option value="subtract">-</option>
+            <option value="multiply">*</option>
+            <option value="divide">/</option>
+            <option value="potencia">^</option>
+        </select>
+        <input type="text" name="num2">
+        <input type="submit" value="Calcular">
+
+    </form>
+
+
+     <h1>Raiz Quadrada</h1>
+        <form method="POST" action="/calculate_operacao">
+            <input type="text" name="num3">
+            <select name="operator2">
+                <option value="raiz">r2</option>
+            </select>
+        <input type="submit" value="Calcular">
+     </form>
+
+     <h1>Media</h1>
+        <form method="POST" action="/calculate_media">
+        <input type="text" name="txt_media">
+        <input type="submit" value="Calcular">
+    </form>
+
+     <h1>Moda</h1>
+        <form method="POST" action="/calculate_moda">
+        <input type="text" name="txt_moda">
+        <input type="submit" value="Calcular">
+    </form>
+
+        <h1>Resultados</h1>
+    <p>O resultado é: {{ result }}</p>
+
+</center>
+</body>
+</html>
